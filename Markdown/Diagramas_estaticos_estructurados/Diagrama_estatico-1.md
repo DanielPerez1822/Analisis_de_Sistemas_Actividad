@@ -47,4 +47,4 @@ Carrito --> Factura
 
 - **Explicación:** El diagrama de clases muestra la estructura de las clases Usuario, Producto, Carrito y Factura, incluyendo sus atributos y métodos. Las relaciones indican que un Usuario puede tener un Carrito, que un Carrito puede contener múltiples Productos, y que una Factura está relacionada con un Carrito y un Usuario. Este diagrama es útil para entender la estructura del sistema y cómo interactúan las diferentes clases.
 
-![Diagrama_estatico-1](Diagrama-1.png)
+![Diagrama estatico 1](Diagrama-1.png)

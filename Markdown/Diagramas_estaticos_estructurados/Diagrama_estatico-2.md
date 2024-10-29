@@ -47,3 +47,5 @@ Carrito *-- Factura
 @enduml
 ```
 - **Explicación:** El diagrama de objetos muestra instancias específicas de las clases Usuario, Producto, Carrito y Factura. Aquí, el carrito contiene dos productos: una laptop y un mouse, y el usuario tiene una factura generada para este carrito. Este diagrama es útil para visualizar el estado del sistema en un momento específico.
+
+![Diagrama estatico](Diagrama-2.png)
