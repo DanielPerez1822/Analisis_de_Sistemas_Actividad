@@ -1,0 +1,41 @@
+@startuml
+class Usuario {
+  +id: Integer
+  +nombre: String
+  +email: String
+  +password: String
+  +registrar()
+  +iniciarSesion()
+}
+
+class Producto {
+  +id: Integer
+  +nombre: String
+  +descripcion: String
+  +precio: Double
+  +stock: Integer
+  +consultarProducto()
+}
+
+class Carrito {
+  +id: Integer
+  +usuario: Usuario
+  +productos: List<Producto>
+  +agregarProducto(Producto, cantidad: Integer)
+  +modificarProducto(Producto, cantidad: Integer)
+  +eliminarProducto(Producto)
+}
+
+class Factura {
+  +id: Integer
+  +usuario: Usuario
+  +carrito: Carrito
+  +fecha: Date
+  +total: Double
+  +generarFactura()
+}
+
+Usuario --> Carrito
+Carrito --> Producto
+Carrito --> Factura
+@enduml

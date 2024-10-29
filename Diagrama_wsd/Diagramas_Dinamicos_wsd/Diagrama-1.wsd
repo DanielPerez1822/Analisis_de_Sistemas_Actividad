@@ -1,0 +1,13 @@
+@startuml
+actor Usuario
+participant "Carrito" as C
+participant "Producto" as P
+participant "Factura" as F
+
+Usuario -> C: agregarProducto(P, 2)
+C -> P: consultarProducto()
+Usuario -> C: modificarProducto(P, 3)
+Usuario -> C: eliminarProducto(P)
+Usuario -> C: generarFactura()
+C -> F: crear()
+@enduml
