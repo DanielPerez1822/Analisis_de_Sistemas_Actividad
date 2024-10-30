@@ -1,0 +1,14 @@
+@startuml
+actor Usuario
+component Carrito
+component Producto
+component Factura
+
+Usuario -> Carrito : agregarProducto(Producto)
+Carrito -> Producto : consultarProducto()
+Usuario -> Carrito : modificarProducto(Producto)
+Usuario -> Carrito : eliminarProducto(Producto)
+Usuario -> Carrito : generarFactura()
+Carrito -> Factura : crearFactura()
+
+@enduml
