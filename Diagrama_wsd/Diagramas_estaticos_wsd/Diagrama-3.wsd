@@ -1,0 +1,8 @@
+@startuml
+package "Sistema de Compras" {
+  [Usuario] --> [Carrito]
+  [Carrito] --> [Producto]
+  [Carrito] --> [Factura]
+  [Factura] --> [Base de Datos]
+}
+@enduml

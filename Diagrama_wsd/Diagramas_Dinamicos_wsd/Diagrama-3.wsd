@@ -1,0 +1,12 @@
+@startuml
+start
+:Usuario inicia sesión;
+:Usuario selecciona productos;
+:Usuario agrega productos al carrito;
+:Usuario modifica productos en el carrito;
+:Usuario elimina productos del carrito;
+:Usuario procede al pago;
+:Usuario confirma la compra;
+:Factura generada;
+stop
+@enduml
