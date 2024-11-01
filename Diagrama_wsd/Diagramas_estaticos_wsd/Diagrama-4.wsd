@@ -1,0 +1,18 @@
+@startuml
+node "Servidor Web" {
+  component "Aplicación Web" {
+    [Usuario]
+    [Carrito]
+    [Producto]
+    [Factura]
+  }
+}
+
+node "Base de Datos" {
+  database "DB" {
+    [Usuarios]
+    [Productos]
+    [Facturas]
+  }
+}
+@enduml

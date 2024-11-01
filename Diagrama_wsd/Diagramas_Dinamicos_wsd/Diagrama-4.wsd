@@ -1,0 +1,20 @@
+@startuml
+state "Producto" as P {
+  [*] --> Disponible
+  Disponible --> NoDisponible : stock = 0
+  NoDisponible --> Disponible : stock > 0
+}
+
+state "Carrito" as C {
+  [*] --> Vacio
+  Vacio --> ConProductos : agregarProducto()
+  ConProductos --> Vacio : eliminarProducto()
+  ConProductos --> Pagado : generarFactura()
+}
+
+state "Usuario" as U {
+  [*] --> NoRegistrado
+  NoRegistrado --> Registrado : registrar()
+  Registrado --> NoRegistrado : eliminarCuenta()
+}
+@enduml
