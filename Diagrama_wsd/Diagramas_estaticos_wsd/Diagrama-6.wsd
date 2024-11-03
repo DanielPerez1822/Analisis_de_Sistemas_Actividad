@@ -1,0 +1,23 @@
+@startuml
+package "Sistema de Compras" {
+  
+  class Usuario <<cliente>> {
+    +id: Integer
+    +nombre: String
+    +email: String
+    +password: String
+    +registrar()
+    +iniciarSesion()
+  }
+
+  class Administrador <<administrador>> {
+    +id: Integer
+    +nombre: String
+    +email: String
+    +password: String
+    +gestionarUsuarios()
+    +gestionarProductos()
+  }
+}
+Usuario <|-- Administrador
+@enduml
