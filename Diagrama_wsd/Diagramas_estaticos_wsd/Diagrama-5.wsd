@@ -1,0 +1,19 @@
+@startuml
+package "Aplicación Web" {
+  [Usuario]
+  [Carrito]
+  [Producto]
+  [Factura]
+}
+
+package "Base de Datos" {
+  [Usuarios]
+  [Productos]
+  [Facturas]
+}
+
+[Usuario] --> [Carrito]
+[Carrito] --> [Producto]
+[Carrito] --> [Factura]
+[Factura] --> [Base de Datos]
+@enduml
